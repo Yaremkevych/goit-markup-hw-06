@@ -196,33 +196,34 @@ a {
 }
 .advantages-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
+    /* gap: 24px; */
 }
 .advantages-item {
-    width: calc((100% - 3 * 24px) / 4);
+    width: 100%;
+    /* width: calc((100% - 3 * 24px) / 4); */
 }
 .advantages-item-title {
     color: var(--navy-blue);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    /* font-size: 20px; */
+    /* font-weight: 500; */
+    font-size: 36px;
+    font-weight: 700;
+    /* line-height: 1.2; */
+    line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
 }
 .advantages-item-text {
     color: var(--slate);
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 .advantages-icon {
-    display: flex;
-    width: 100%;
-    height: 112px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    background: var(--cloud);
-    margin-bottom: 8px;
+    display: none;
 }
 /*-----------SECTION-3-----------*/
 .work-title {
@@ -237,6 +238,7 @@ a {
 }
 .work {
     padding-bottom: 120px;
+    display: none;
 }
 .work-list {
     display: flex;
@@ -814,6 +816,18 @@ a {
     .team-list-item {
         width: calc((100% - 24px) / 2);
     }
+    .advantages-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 72px;
+    }
+    .advantages-item {
+        width: calc((100% - 24px) / 2);
+    }
+    .advantages-item-title {
+        text-align: left;
+    }
 }
 @media screen and (min-width: 1158px) {
     .container {
@@ -851,5 +865,26 @@ a {
 
     .team-list-item {
         width: calc((100% - 72px) / 4);
+    }
+    .advantages-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+    .advantages-item-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .advantages-item-text {
+        font-weight: 400;
+    }
+    .advantages-icon {
+        display: flex;
+        width: 100%;
+        height: 112px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        background: var(--cloud);
+        margin-bottom: 8px;
     }
 }
