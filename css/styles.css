@@ -376,7 +376,7 @@ a {
 }
 .footer-logo-container {
     /* margin-right: 120px; */
-    margin: 0 auto;
+    text-align: center;
 }
 .logo .footer-logo {
     color: var(--cloud);
@@ -392,6 +392,7 @@ a {
     letter-spacing: 0.02em;
     /* max-width: 264px; */
     max-width: 268px;
+    text-align: left;
 }
 .footer-social-networks {
     /* flex-grow: 1; */
