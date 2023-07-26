@@ -376,6 +376,7 @@ a {
 }
 .footer-logo-container {
     /* margin-right: 120px; */
+    margin: 0 auto;
 }
 .logo .footer-logo {
     color: var(--cloud);
@@ -389,7 +390,8 @@ a {
     color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
+    /* max-width: 264px; */
+    max-width: 268px;
 }
 .footer-social-networks {
     /* flex-grow: 1; */
