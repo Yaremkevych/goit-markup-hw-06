@@ -67,7 +67,7 @@ a {
     width: 100%;
     max-width: 428px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 .current::after {
     content: "";
@@ -151,20 +151,20 @@ a {
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office.jpg);
+        url(../images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
+    padding: 112px 0px;
 }
 .solutions-title {
     color: var(--white);
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    max-width: 320px;
     margin: 0 auto;
 }
 .solutions-btn {
@@ -179,7 +179,7 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 48px;
+    margin-top: 72px;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -228,7 +228,7 @@ a {
 /*-----------SECTION-4-----------*/
 .team {
     background-color: var(--cloud);
-    padding: 96px 67px;
+    padding: 96px 66px;
 }
 .team-list {
     display: flex;
@@ -578,7 +578,8 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1, 1);
-    width: 408px;
+    width: 100%;
+    max-width: 392px;
     min-height: 584px;
     background: var(--dairy);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -742,7 +743,7 @@ a {
         max-width: 768px;
     }
     .footer {
-        padding: 96px 93px;
+        padding: 96px 92px;
     }
     .footer-container {
         align-items: start;
@@ -772,7 +773,7 @@ a {
         margin: 0;
     }
     .customers {
-        padding: 96px 93px;
+        padding: 96px 92px;
     }
     .customers-list {
         gap: 24px;
@@ -784,7 +785,7 @@ a {
         width: 104px;
     }
     .team {
-        padding: 96px 93px;
+        padding: 96px 92px;
     }
     .team-list {
         flex-direction: row;
@@ -807,10 +808,27 @@ a {
     .advantages-item-title {
         text-align: left;
     }
+    .solutions {
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/people-office-tab.jpg);
+    }
+    .solutions-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+    .solutions-btn {
+        margin-top: 36px;
+    }
+    .modal {max-width: 408px;
 }
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+        padding: 0 15px;
     }
     .footer {
         padding: 100px 0;
@@ -883,5 +901,28 @@ a {
     }
     .work-list-item {
         width: calc((100% - 48px) / 3);
+    }
+    .solutions {
+        max-width: 1440px;
+        padding: 188px 0;
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/people-office.jpg);
+    }
+    .solutions-btn {
+        margin-top: 48px;
+    }
+}
+@media screen and (max-width: 428px) {
+    .social-nerworks-list {
+        gap: 12px;
+        padding: 0 10px;
+    }
+    .social-nerworks-items {
+        width: calc((100% - 36px) / 4);
+        max-width: 32px;
+        height: 32px;
     }
 }
