@@ -353,7 +353,6 @@ a {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    align-items: center;
 }
 .footer-logo-container {
     text-align: center;
@@ -372,6 +371,7 @@ a {
     letter-spacing: 0.02em;
     max-width: 268px;
     text-align: left;
+    margin: 0 auto;
 }
 .footer-networks-title {
     font-weight: 500;
@@ -385,6 +385,9 @@ a {
 .footer-nerworks-list {
     display: flex;
     gap: 16px;
+}
+.footer-social-networks {
+    margin: 0 auto;
 }
 
 .footer-nerworks-items {
@@ -416,9 +419,6 @@ a {
     letter-spacing: 0.02em;
     color: var(--white);
     text-align: center;
-}
-.footer-email-container {
-    width: 100%;
 }
 
 .footer-email-input {
@@ -758,6 +758,9 @@ a {
     .footer-text {
         max-width: 264px;
     }
+    .footer-social-networks {
+        margin: 0;
+    }
     .footer-email-form {
         display: flex;
         gap: 24px;
@@ -823,10 +826,7 @@ a {
         margin-right: 120px;
     }
     .footer-social-networks {
-        margin-right: 80px;
-    }
-    .footer-email-container {
-        width: 453px;
+        flex-grow: 1;
     }
     .customers {
         padding: 120px 0;
