@@ -122,6 +122,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 24px;
 }
 .mobile-menu {
     position: fixed;
@@ -136,6 +138,13 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transform: translateX(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-hidden {
+    transform: translateX(100%);
 }
 .close-menu-btn {
     position: absolute;
@@ -812,6 +821,12 @@ a {
     .container {
         max-width: 768px;
     }
+    .header-container {
+        padding: 0 16px;
+    }
+    .open-menu-btn {
+        display: none;
+    }
     .navigation-list {
         display: flex;
         gap: 40px;
@@ -834,14 +849,16 @@ a {
     }
     .address-list {
         display: flex;
-        gap: 40px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
     }
-
     .address-list-link {
         color: var(--slate);
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        padding: 24px 0;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .address-list-link:hover,
@@ -966,6 +983,16 @@ a {
     }
     .footer-social-networks {
         flex-grow: 1;
+    }
+    .address-list {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .address-list-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        padding: 24px 0;
     }
     .customers {
         padding: 120px 0;
