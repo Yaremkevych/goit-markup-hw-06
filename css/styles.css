@@ -172,7 +172,7 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
-.menu-list-item .current-menu-item {
+.menu-list-link:active {
     color: var(--iris);
 }
 .menu-address {
@@ -181,6 +181,13 @@ a {
 
 .menu-address-item:not(:last-child) {
     margin-bottom: 40px;
+}
+.menu-address-list-link:active {
+    color: var(--iris);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
 }
 .menu-address-list-link {
     color: var(--slate);
