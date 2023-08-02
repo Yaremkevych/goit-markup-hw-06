@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <header class="header">
+        <header>
             <div class="container header-container">
                 <nav class="navigation">
                     <a class="logo link" href="./index.html"
@@ -47,6 +47,11 @@
                             >
                         </li>
                     </ul>
+                    <button class="open-menu-btn" type="button" menu-open>
+                        <svg class="open-menu-icon" width="32" height="22">
+                            <use href="./images/icons.svg#menu-hamburger"></use>
+                        </svg>
+                    </button>
                 </nav>
                 <address class="address">
                     <ul class="address-list list">
@@ -66,11 +71,6 @@
                         </li>
                     </ul>
                 </address>
-                <button class="open-menu-btn" type="button" menu-open>
-                    <svg class="open-menu-icon" width="32" height="22">
-                        <use href="./images/icons.svg#menu-hamburger"></use>
-                    </svg>
-                </button>
             </div>
             <div class="mobile-menu is-hidden" menu-container>
                 <button class="close-menu-btn" type="button" menu-close>
